@@ -11,10 +11,10 @@ Configure and orchestrate specialized multi-model agent teams inspired by Claude
 
 | Role | Antigravity Model | Claude Analogy | Primary Responsibility |
 |:---|:---|:---|:---|
-| **Coordinator (Main)** | `inherit` / Flash | Sonnet | Direct user interaction, orchestrating workflow, core implementation. |
-| **Advisor (Architect)** | `pro` | Fable / Opus | High-level system architecture, tradeoff evaluation, design validation. |
-| **Reviewer (Auditor)** | `pro` | Opus | Rigorous code review, security audit, type safety, refactoring verification. |
-| **Worker (Subagent)** | `flash_lite` (or `flash`) | Haiku | Lightweight parallel file searches, batch text processing, quick lint/syntax checks. |
+| **Coordinator (Main)** | `Gemini 3.8 Flash` (`inherit`) | Sonnet | Direct user interaction, orchestrating workflow, core implementation. |
+| **Advisor (Architect)** | `Gemini 4 Carbon` (`pro`) | Fable / Opus | High-level system architecture, tradeoff evaluation, design validation. |
+| **Reviewer (Auditor)** | `Gemini 4 Carbon` (`pro`) | Opus | Rigorous code review, security audit, type safety, refactoring verification. |
+| **Worker (Subagent)** | `Gemini 4 Hydrogen` (`flash_lite`) | Haiku | Lightweight parallel file searches, batch text processing, quick lint/syntax checks. |
 
 ## Execution Patterns
 
