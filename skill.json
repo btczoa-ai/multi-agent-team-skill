@@ -1,0 +1,14 @@
+{
+  "name": "multi-agent-team",
+  "version": "1.0.0",
+  "description": "Orchestrates multi-model agent teams (Flash, Pro, Flash-Lite) across projects with global setup automation",
+  "author": "custom",
+  "entry": "skills/multi-agent-team/SKILL.md",
+  "skills": [
+    {
+      "name": "multi-agent-team",
+      "path": "skills/multi-agent-team",
+      "description": "Configure and run specialized multi-model agent teams (Coordinator, Advisor, Reviewer, Worker) across Antigravity workspaces."
+    }
+  ]
+}
