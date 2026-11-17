@@ -84,6 +84,12 @@ for agent in antigravity gemini claude codex; do
   if [[ -d "${agent_root}" ]]; then
     mkdir -p "${skill_dir}"
     cp "${SRC_SKILL}" "${skill_dir}/SKILL.md"
+    for res_dir in html scripts templates; do
+      if [[ -d "${SCRIPT_DIR}/${res_dir}" ]]; then
+        mkdir -p "${skill_dir}/${res_dir}"
+        cp -rf "${SCRIPT_DIR}/${res_dir}/." "${skill_dir}/${res_dir}/"
+      fi
+    done
     echo "[${agent}] Installed skill -> ${skill_dir}/SKILL.md"
     upsert_rule "${AGENT_RULE_FILES[$agent]}"
     installed=$((installed + 1))
